@@ -10,6 +10,7 @@ import { App } from '@rocket.chat/apps-engine/definition/App';
 import { AppMethod, IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import { IFileUploadContext } from '@rocket.chat/apps-engine/definition/uploads';
 import { IPreFileUpload } from '@rocket.chat/apps-engine/definition/uploads/IPreFileUpload';
+//import { FileUploadNotAllowedException } from '@rocket.chat/apps-engine/definition/exceptions';
 
 export class ContentInspectionExampleAppApp extends App implements IPreFileUpload {
     constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
@@ -21,6 +22,7 @@ export class ContentInspectionExampleAppApp extends App implements IPreFileUploa
         console.log('ContentInspectionExampleAppApp - File Uploaded - Name: '+context.file.name);
         console.log('ContentInspectionExampleAppApp - File Uploaded - Type: '+context.file.type);
         console.log('ContentInspectionExampleAppApp - File Uploaded - Size: '+context.file.size);
-
+        //if file is bad
+        //throw new FileUploadNotAllowedException('File is Bad');
     }
 }
