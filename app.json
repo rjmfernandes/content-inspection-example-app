@@ -13,6 +13,7 @@
     "classFile": "ContentInspectionExampleAppApp.ts",
     "description": "An example of content inspection app for files and messages",
     "implements": [
-        "IPreFileUpload"
+        "IPreFileUpload",
+        "IPreMessageSentPrevent"
     ]
 }
