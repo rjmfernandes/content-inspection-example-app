@@ -1,0 +1,15 @@
+{
+    "id": "1a65c829-37af-4df6-943c-d246cedae831",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.4.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Rui Fernandes",
+        "homepage": "rocket.chat",
+        "support": "rocket.chat"
+    },
+    "name": "Content Inspection Example App",
+    "nameSlug": "content-inspection-example-app",
+    "classFile": "ContentInspectionExampleAppApp.ts",
+    "description": "An example of content inspection app for files and messages"
+}
